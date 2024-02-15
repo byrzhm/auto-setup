@@ -1,0 +1,61 @@
+"" Source your .vimrc
+"source ~/.vimrc
+
+"" -- Map IDE actions to IdeaVim -- https://jb.gg/abva4t
+"" Map \r to the Reformat Code action
+"map \r <Action>(ReformatCode)
+
+"" Map <leader>d to start debug
+"map <leader>d <Action>(Debug)
+
+"" Map \b to toggle the breakpoint on the current line
+"map \b <Action>(ToggleLineBreakpoint)
+
+" Find more examples here: https://jb.gg/share-ideavimrc
+
+""" Plugins  --------------------------------
+set surround
+set multiple-cursors
+set commentary
+set argtextobj
+set easymotion
+set textobj-entire
+set ReplaceWithRegister
+set NERDTree
+
+""" Plugin settings -------------------------
+let g:argtextobj_pairs="[:],(:),<:>"
+
+""" Common settings -------------------------
+set showmodewidget
+set colorfulmodewidget
+
+" Show a few lines of context around the cursor. Note that this makes the
+" text scroll if you mouse-click near the start or end of the window.
+set scrolloff=8
+
+" Do incremental searching.
+set incsearch
+
+set nu
+set relativenumber
+set visualbell
+
+""" Idea specific settings ------------------
+set ideajoin
+set idearefactormode=keep
+
+""" Mappings --------------------------------
+let mapleader = " "
+
+nmap Q         <Action>(ReformatCode)
+nmap <leader>r <Action>(RenameElement)
+nmap <leader>b <Action>(ToggleLineBreakpoint)
+nmap <C-j>     <Action>(GotoNextError)
+nmap <C-k>     <Action>(GotoPreviousError)
+nmap <leader>f <Plug>(easymotion-s)
+nmap <leader>q <C-o>
+nmap <leader>e <C-i>
+
+nmap [[        <Action>(MethodUp)
+nmap ]]        <Action>(MethodDown)
