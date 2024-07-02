@@ -33,6 +33,20 @@
                 "editor.action.startFindReplaceAction"
             ]
         },
+        { // copy to system clipboard
+            "before": [
+                "leader",
+                "y"
+            ],
+            "after": ["\"", "+", "y"]
+        },
+        { // copy to system clipboard
+            "before": [
+                "leader",
+                "Y"
+            ],
+            "after": ["\"", "+", "Y"]
+        },
         { // select all 
             "before": [
                 "<C-a>"
@@ -109,24 +123,6 @@
                 "editor.unfoldAll"
             ]
         },
-        { // fold recursively 📁
-            "before": [
-                "space",
-                "["
-            ],
-            "commands": [
-                "editor.foldRecursively"
-            ]
-        },
-        { // unfold recursively 📂
-            "before": [
-                "space",
-                "]"
-            ],
-            "commands": [
-                "editor.unfoldRecursively"
-            ]
-        }
     ],
     "vim.normalModeKeyBindingsNonRecursive": [
         { // easymotion: search n-character 😎
@@ -217,7 +213,14 @@
             "after": [
                 "y"
             ]
-        }
+        },
+        { // copy to system clipboard
+            "before": [
+                "leader",
+                "y"
+            ],
+            "after": ["\"", "+", "y"]
+        },
     ],
     "vim.visualModeKeyBindingsNonRecursive": [],
     "vim.handleKeys": {
