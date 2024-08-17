@@ -1,4 +1,4 @@
 #! /bin/bash
 
-echo "configure"
+apt-get install -y git
 
