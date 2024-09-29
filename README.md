@@ -6,3 +6,6 @@
 * [Make TMUX Look Amazing in 3 Minutes! - complete tutorial](https://www.youtube.com/watch?v=H70lULWJeig)
 * [Tmux From Scratch To BEAST MODE](https://www.youtube.com/watch?v=GH3kpsbbERo)
 
+# FAQs
+
+* [Neovim don't find a clipboard tool](https://forums.linuxmint.com/viewtopic.php?t=288294)
