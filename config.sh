@@ -24,3 +24,8 @@ sudo apt-get install -y libgoogle-perftools-dev numactl
 
 sudo apt-get install -y perl-doc
 sudo apt-get install -y autoconf flex bison
+
+
+
+# Vivado
+sudo apt-get install -y libtinfo5 libncurses5
