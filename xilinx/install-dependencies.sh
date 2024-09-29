@@ -17,3 +17,9 @@ sudo apt-get install -y libncurses5 libncurses5-dev libncursesw5:amd64 libncurse
 # /tools/Xilinx/Vivado/*/data/xicom/cable_drivers/lin64/install_script/install_drivers
 
 sudo adduser $USER dialout # serial terminal
+
+### Digilent Board Files ###
+export DIGILENT_BOARD_FILES="$HOME/tmp/vivado-boards"
+git clone git@github.com:Digilent/vivado-boards.git "$DIGILENT_BOARD_FILES"
+sudo cp -r "$DIGILENT_BOARD_FILES/new/" /tools/Xilinx/Vivado/*/data/boards
+rm -rf "$DIGILENT_BOARD_FILES"
