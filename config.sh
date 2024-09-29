@@ -1,4 +1,5 @@
 #! /bin/bash
 
-apt-get install -y git
-
+sudo apt update
+sudo apt upgrade
+sudo apt-get install -y net-tools git
