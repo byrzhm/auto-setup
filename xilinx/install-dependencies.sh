@@ -12,3 +12,8 @@ sudo apt-get install -y gcc-multilib build-essential automake screen putty pax g
 sudo apt-get install -y liberror-perl mtd-utils xtrans-dev libxcb-randr0-dev libxcb-xtest0-dev libxcb-xinerama0-dev libxcb-shape0-dev libxcb-xkb-dev
 sudo apt-get install -y util-linux sysvinit-utils cython google-perftools patch diffutils ocl-icd-libopencl1 opencl-headers ocl-icd-opencl-dev
 sudo apt-get install -y libncurses5 libncurses5-dev libncursesw5:amd64 libncursesw5-dev libncurses5:i386 libtinfo5 libstdc++6:i386 libgtk2.0-0:i386 dpkg-dev:i386
+
+# /tools/Xilinx/Vitis/*/scripts$ sudo ./installLibs.sh
+# /tools/Xilinx/Vivado/*/data/xicom/cable_drivers/lin64/install_script/install_drivers
+
+sudo adduser $USER dialout # serial terminal
