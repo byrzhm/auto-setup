@@ -2,8 +2,8 @@
 
 ## https://gist.github.com/luizomf/f0aad4db02e1ee4fdce2769ac58122fb
 
-sudo apt install zsh -y
-sudo apt-get install powerline fonts-powerline -y
+sudo apt install -y zsh
+sudo apt-get install -y powerline fonts-powerline
 git clone git@github.com:robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
 chsh -s /bin/zsh
@@ -30,3 +30,8 @@ rm -Rf ~/.gnome-terminal
 
 # SET BACKGROUND COLOR TO
 # #171724
+
+## startup fun
+## https://linux.cn/article-16205-1.html
+# sudo apt install -y fortune lolcat neofetch
+# sudo apt-get install -y imagemagick jp2a
