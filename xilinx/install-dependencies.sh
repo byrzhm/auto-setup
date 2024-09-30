@@ -1,6 +1,8 @@
 #! /bin/bash
 
 # https://www.hackster.io/whitney-knitter/vivado-vitis-petalinux-2023-2-install-on-ubuntu-2f1b98
+# Vivado Vitis Vitis_HLS PetaLinux
+
 ## sudo dpkg-reconfigure dash
 sudo dpkg --add-architecture i386
 
