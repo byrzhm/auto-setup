@@ -51,3 +51,11 @@ rm -rf gcc-14.2.0 gcc-14.2.0.tar.gz
 sudo update-alternatives --install /usr/bin/g++ g++ /usr/local/gcc-14.2.0/bin/g++-14.2.0 14
 sudo update-alternatives --install /usr/bin/gcc gcc /usr/local/gcc-14.2.0/bin/gcc-14.2.0 14
 
+
+### Java
+## Java Runtime Environment 
+sudo apt-get install -y default-jre
+java -version
+## Java Development Kit
+sudo apt-get install -y default-jdk
+javac -version
