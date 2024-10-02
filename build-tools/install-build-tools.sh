@@ -37,7 +37,7 @@ sudo ln -s /usr/lib/llvm-18/bin/lldb /usr/bin/lldb
 ## gcc
 sudo apt install -y build-essential
 sudo apt install -y libmpfr-dev libgmp3-dev libmpc-dev
-wget http://ftp.gnu.org/gnu/gcc/gcc-14.1.0/gcc-14.1.0.tar.gz
+wget http://ftp.gnu.org/gnu/gcc/gcc-14.2.0/gcc-14.2.0.tar.gz
 tar -xvf gcc-14.2.0.tar.gz
 cd gcc-14.2.0
 ./configure -v --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu \
