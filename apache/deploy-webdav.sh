@@ -10,30 +10,23 @@ sudo mkdir /var/www/webdav
 sudo chown www-data:www-data /var/www/webdav
 sudo chmod 755 /var/www/webdav
 
-sudo vim /etc/apache2/sites-available/webdav.conf
+sudo vim /etc/apache2/sites-available/000-default.conf
 
 '
-<VirtualHost *:80>
-    ServerAdmin admin@example.com
-    ServerName example.com
+<Directory /var/www/webdav>
+  Options Indexes FollowSymLinks
+  AllowOverride None
+  Require all granted
+  Dav On
+</Directory>
 
-    DocumentRoot /var/www/webdav
-    <Directory /var/www/webdav>
-        Options Indexes FollowSymLinks
-        AllowOverride None
-        Require all granted
-    </Directory>
-
-    Alias /webdav /var/www/webdav             <--- or Alias /zotero /var/www/webdav
-
-    <Location /webdav>                        <--- or <Location /zotero>
-        DAV On
-        AuthType Basic
-        AuthName "WebDAV Restricted"          <--- or AuthName "Zotero WebDAV"
-        AuthUserFile /etc/apache2/webdav.passwd
-        Require valid-user
-    </Location>
-</VirtualHost>
+<Location /webdav>
+  DAV On
+  AuthType Basic
+  AuthName "WebDAV"
+  AuthUserFile /etc/apache2/webdav.password
+  Require valid-user
+</Location>
 '
 
 ## Set Up Authentication
