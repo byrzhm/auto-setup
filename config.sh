@@ -4,6 +4,10 @@ sudo apt update
 sudo apt upgrade
 sudo apt-get install -y net-tools git openssh-server
 
+# add to .bashrc/.zshrc/...
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+
 # clash
 # https://nyanpasu.elaina.moe/tutorial/install.html
 
