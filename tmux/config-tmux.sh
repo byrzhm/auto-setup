@@ -1,6 +1,8 @@
 #! /bin/bash
 
 sudo apt install -y tmux
+## or build from source
+### https://github.com/tmux/tmux
 
 echo "set -g mouse on" > ~/.tmux.conf
 echo "bind - split-window -v" >> ~/.tmux.conf
