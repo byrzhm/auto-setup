@@ -33,6 +33,7 @@ sudo dpkg -i ./containerd.io_<version>_<arch>.deb \
 # sudo dpkg -i *.deb
 
 sudo usermod -aG docker ${USER}
-
+## change USER to actual user, e.g., ming
+## logout then login, `docker info` or `id` to see result
 
 # ... mirror
