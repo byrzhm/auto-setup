@@ -2,9 +2,14 @@
 
 ## https://github.com/Syllo/nvtop
 
-sudo apt install -y libdrm-dev libsystemd-dev
-# Ubuntu 18.04
-sudo apt install -y libudev-dev
+sudo apt install -y libdrm-dev libsystemd-dev libncurses5-dev libncursesw5-dev libudev-dev
+
+## NVIDIA Drivers
+sudo add-apt-repository ppa:graphics-drivers/ppa
+sudo apt update
+
+### Then ... ????
+
 
 git clone git@github.com:Syllo/nvtop.git
 mkdir -p nvtop/build && cd nvtop/build
@@ -19,5 +24,3 @@ sudo make install
 
 cd ../..
 rm -rf nvtop
-
-# !!!!!! NVIDIA Driver ?????
