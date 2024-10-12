@@ -18,6 +18,10 @@ Create an environment.
 conda create -n llama3
 ```
 
+* `-n` specifies the name
+* `python=3.11` specifies the python version
+
+
 Activate an environment.
 
 ```sh
