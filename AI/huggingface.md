@@ -2,7 +2,7 @@
 
 ## HF-Mirror ([hf-mirror.com]([hf-mirror.com](https://hf-mirror.com/)))
 
-See [https://zhuanlan.zhihu.com/p/663712983](https://zhuanlan.zhihu.com/p/663712983).
+See [https://zhuanlan.zhihu.com/p/663712983](https://zhuanlan.zhihu.com/p/663712983), [https://huggingface.co/docs/huggingface_hub/v0.23.4/guides/download#download-an-entire-repository](https://huggingface.co/docs/huggingface_hub/v0.23.4/guides/download#download-an-entire-repository), [https://huggingface.co/docs/hub/security-tokens](https://huggingface.co/docs/hub/security-tokens).
 
 ```sh
 pip install -U huggingface_hub
