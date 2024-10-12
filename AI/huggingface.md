@@ -18,6 +18,12 @@ huggingface-cli download --repo-type dataset --resume-download wikitext --local-
 huggingface-cli login --token YOUR_TOKEN
 ```
 
+## Download Directory
+
+```sh
+export TRANSFORMERS_CACHE="/path/to/cache"
+```
+
 ## Use the Transformers Library
 
 Once downloaded, you can load the model programmatically using the transformers library like this:
