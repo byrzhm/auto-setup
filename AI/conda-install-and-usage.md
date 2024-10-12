@@ -31,3 +31,15 @@ conda activate llama3
 ```sh
 conda deactivate
 ```
+
+### Install Python (Allow Downgrade)
+
+```sh
+conda install python=3.12
+```
+
+### Install pip
+
+```sh
+conda install pip
+```
