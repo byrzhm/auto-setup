@@ -34,3 +34,7 @@ source .venv/bin/activate
 ## ...
 ## pip install pytest
 deactivate
+
+# pip mirror
+python -m pip install --upgrade pip
+pip config set global.index-url https://mirrors6.tuna.tsinghua.edu.cn/pypi/web/simple
