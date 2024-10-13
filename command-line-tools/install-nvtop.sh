@@ -8,6 +8,8 @@ sudo apt install -y libdrm-dev libsystemd-dev libncurses5-dev libncursesw5-dev l
 sudo add-apt-repository ppa:graphics-drivers/ppa
 sudo apt update
 
+sudo apt search nvidia-driver
+
 ### Then ... ????
 
 
