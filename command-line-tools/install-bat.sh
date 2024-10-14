@@ -8,3 +8,5 @@ cd bat
 cargo install --locked bat
 cd ..
 rm -rf bat
+
+## It's a good idea to alias `cat` with `bat -pp`.
