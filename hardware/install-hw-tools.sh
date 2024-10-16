@@ -3,8 +3,11 @@
 ## iverlog gtkwave verilator
 
 ## iverilog
-git clone git@github.com:steveicarus/iverilog.git --depth=1
-cd iverilog
+# git clone git@github.com:steveicarus/iverilog.git --depth=1
+wget https://github.com/steveicarus/iverilog/archive/refs/tags/v12_0.tar.gz
+tar -xvf v12_0.tar.gz
+cd iverilog-12_0
+sh autoconf.sh
 ./configure --prefix=$HOME/.local
 make -j"$(nproc)"
 sudo make install
