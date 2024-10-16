@@ -23,5 +23,5 @@ sudo adduser $USER dialout # serial terminal
 ### Digilent Board Files ###
 export DIGILENT_BOARD_FILES="$HOME/tmp/vivado-boards"
 git clone git@github.com:Digilent/vivado-boards.git "$DIGILENT_BOARD_FILES"
-sudo cp -r "$DIGILENT_BOARD_FILES/new/" /tools/Xilinx/Vivado/*/data/boards
+sudo cp -r "$DIGILENT_BOARD_FILES/new/board_files" /tools/Xilinx/Vivado/*/data/boards
 rm -rf "$DIGILENT_BOARD_FILES"
