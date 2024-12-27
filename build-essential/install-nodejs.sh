@@ -10,3 +10,4 @@ nvm install stable
 nvm use stable
 
 npm config set registry https://mirrors.cloud.tencent.com/npm/
+npm config set registry https://registry.npmjs.org/
