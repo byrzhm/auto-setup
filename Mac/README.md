@@ -1,5 +1,10 @@
 # Mac Setup
 
+## Homebrew
+
+- [Tsinghua](https://mirrors.tuna.tsinghua.edu.cn/help/homebrew/)
+- [Homebrew 中文网](https://brew.idayer.com/)
+
 ## Change default associated application for file extensions
 
 1.	Right-click the file you want to change the default application for (e.g., a .pdf or .pptx file).
