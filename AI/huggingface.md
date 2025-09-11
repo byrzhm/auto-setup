@@ -18,10 +18,13 @@ huggingface-cli download --repo-type dataset --resume-download wikitext --local-
 huggingface-cli login --token YOUR_TOKEN
 ```
 
-## Download Directory
+## [Download Directory](https://huggingface.co/docs/transformers/en/installation?install=uv#cache-directory)
 
 ```sh
-export TRANSFORMERS_CACHE="/path/to/cache"
+# echo 'export TRANSFORMERS_CACHE=/path/to/cache' >> ~/.bashrc
+sudo mkdir -p /data
+sudo chmod 777 /data
+echo 'export HF_HOME=/data/huggingface' >> ~/.bashrc
 ```
 
 ## Use the Transformers Library
