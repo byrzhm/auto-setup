@@ -4,7 +4,15 @@
 
 ```sh
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh # or use mirrors
-bash Miniconda3-latest-Linux-x86_64.sh
+bash Miniconda3-latest-Linux-x86_64.sh # activate conda manually
+
+cat >> ~/.bashrc <<EOF
+export PATH="\$HOME/miniconda3/bin:\$PATH"
+conda_shell_hook() {
+    eval "$(conda shell.bash hook)"
+}
+EOF
+
 exec $SHELL
 ```
 
