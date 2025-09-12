@@ -56,11 +56,14 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 ```
 
 > [!NOTE]
-> To execute the docker command without sudo:
+> - To execute the docker command without sudo:
 > ```bash
 > sudo usermod -aG docker ${USER}
 > sudo usermod -aG docker username
 > ```
+> 
+> - You should initialize [`pass`](https://docs.docker.com/desktop/setup/sign-in/#signing-in-with-docker-desktop-for-linux) before signing in with Docker Desktop for Linux.
+> 
 
 ## NVIDIA Container Toolkit
 
