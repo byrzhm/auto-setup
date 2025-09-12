@@ -27,6 +27,7 @@ sudo apt-get install ./docker-desktop-amd64.deb
 ```
 
 If you cannot access `download.docker.com`:
+1. Manually install (not recommended):
 ```bash
 # Download docker-ce-cli from
 # https://download.docker.com/linux/ubuntu/dists/<dist>/pool/stable/amd64/docker-ce-cli_<version>_<arch>.deb
@@ -36,6 +37,24 @@ sudo dpkg -i docker-ce-cli_<version>_<arch>.deb
 sudo apt install ./docker-desktop-amd64.deb
 ```
 
+2. [清华源](https://mirrors.tuna.tsinghua.edu.cn/help/docker-ce/) (recommended):
+```bash
+sudo apt-get update
+sudo apt-get install ca-certificates curl gnupg
+
+sudo install -m 0755 -d /etc/apt/keyrings
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+sudo chmod a+r /etc/apt/keyrings/docker.gpg
+echo \
+  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://mirrors6.tuna.tsinghua.edu.cn/docker-ce/linux/ubuntu \
+  "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" | \
+  sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+# 6 for IPv6
+
+sudo apt-get update
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+```
+
 > [!NOTE]
 > To execute the docker command without sudo:
 > ```bash
@@ -43,3 +62,6 @@ sudo apt install ./docker-desktop-amd64.deb
 > sudo usermod -aG docker username
 > ```
 
+## NVIDIA Container Toolkit
+
+See [https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html).
